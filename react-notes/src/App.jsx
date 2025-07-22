@@ -5,6 +5,7 @@ import "./App.css";
 import HelloWorld from "./components/HelloWorld";
 import LearnJSX from "./components/LearnJSX";
 import LearnProps from "./components/LearnProps";
+import LearnEvent from "./components/LearnEvent";
 
 function App() {
   // create data to pass down as prop to LearnProps.jsx child component
@@ -24,6 +25,7 @@ function App() {
       <LearnJSX />
       {/* give Learn prop child of app.jsx some data (a prop) called passItDown  */}
       <LearnProps passItDown={passItDown} />
+      <LearnEvent />
     </>
   );
 }

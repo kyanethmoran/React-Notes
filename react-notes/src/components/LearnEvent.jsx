@@ -1,5 +1,9 @@
 const LearnEvent = () => {
-  return <div>LearnEvent</div>;
+  return (
+    <>
+      <h2>How Do Events Work?</h2>
+    </>
+  );
 };
 
 export default LearnEvent;
