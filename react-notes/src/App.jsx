@@ -19,7 +19,8 @@ function App() {
       {/* add the components to utilize it in the app */}
       <HelloWorld />
       <LearnJSX />
-      <LearnProps />
+      {/* give Learn prop child of app.jsx some data (a prop) called passItDown  */}
+      <LearnProps passItDown="I came from App.jsx." />
     </>
   );
 }
