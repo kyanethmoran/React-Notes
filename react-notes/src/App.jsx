@@ -21,15 +21,32 @@ function App() {
           This Source Code is <strong>HEAVILY</strong> Annotated
         </i>
       </h3>
-      {/* add the components to utilize it in the app */}
-      <HelloWorld />
-      <LearnJSX />
-      {/* give Learn prop child of app.jsx some data (a prop) called passItDown  */}
-      <LearnProps passItDown={passItDown} />
-      {/* handle an event like a button onClick */}
-      <LearnEvent />
-      {/* learn how to pass data from child to parent (lifting state) */}
-      <LearnLiftingStateUp />
+
+      <ol>
+        <li>
+          {/* add the components to utilize it in the app */}
+          <HelloWorld />
+        </li>
+        <li>
+          <LearnJSX />
+        </li>
+        <li>
+          {/* give Learn prop child of app.jsx some data (a prop) called passItDown  */}
+          <LearnProps passItDown={passItDown} />
+        </li>
+        <li>
+          {/* handle an event like a button onClick */}
+          <LearnEvent />
+        </li>
+        <li>
+          {/* learn how to pass data from child to parent (lifting state) */}
+          <LearnLiftingStateUp />
+        </li>
+        <li>State</li>
+        <li>useStateHook with Objects</li>
+        <li>Coutner App</li>
+        <li>useEffect Hook</li>
+      </ol>
     </>
   );
 }
