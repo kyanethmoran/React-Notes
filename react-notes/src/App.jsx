@@ -4,6 +4,7 @@ import "./App.css";
 // add Components via import
 import HelloWorld from "./components/HelloWorld";
 import LearnJSX from "./components/LearnJSX";
+import LearnProps from "./components/LearnProps";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       {/* add the components to utilize it in the app */}
       <HelloWorld />
       <LearnJSX />
+      <LearnProps />
     </>
   );
 }
