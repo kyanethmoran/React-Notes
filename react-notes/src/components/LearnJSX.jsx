@@ -1,6 +1,6 @@
 import React from "react";
 
-// this element is being explicitly created to shwo how jsx works under the hood
+// this element is being explicitly created to show how jsx works under the hood
 const pElement = React.createElement(
   "p",
   null,
