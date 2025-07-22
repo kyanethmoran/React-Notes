@@ -7,6 +7,9 @@ import LearnJSX from "./components/LearnJSX";
 import LearnProps from "./components/LearnProps";
 
 function App() {
+  // create data to pass down as prop to LearnProps.jsx child component
+  let passItDown = "I came from App.jsx.";
+
   return (
     <>
       <h1>React Notes: Annotated Code</h1>
@@ -20,7 +23,7 @@ function App() {
       <HelloWorld />
       <LearnJSX />
       {/* give Learn prop child of app.jsx some data (a prop) called passItDown  */}
-      <LearnProps passItDown="I came from App.jsx." />
+      <LearnProps passItDown={passItDown} />
     </>
   );
 }
