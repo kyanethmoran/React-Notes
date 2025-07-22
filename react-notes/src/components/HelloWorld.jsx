@@ -24,7 +24,7 @@ const HelloWorld = () => {
             {/* this created an item in the list, add more to <li></li> to make the list longer */}
             <li>
               You could do it with &lt;div&gt;&lt;/div&gt;, however that will
-              affect SEO so the clean way to do it is with a{" "}
+              affect SEO so the clean way to do it is with a
               {/* very old way to bold text */}
               <strong>Fragment</strong>
             </li>
