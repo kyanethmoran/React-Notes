@@ -1,6 +1,11 @@
 import React from "react";
 
 const LearnLiftingStateUp = () => {
+  // this is the function that will handle the button click to lift the state to App.jsx
+  const handleClickLiftState = () => {
+    let childData = "This came from the Child component by Lifting State";
+  };
+
   return (
     <>
       <h2>Lifting State Up: Data from Child to Parent</h2>
@@ -12,6 +17,12 @@ const LearnLiftingStateUp = () => {
         by several child components to their closest common ancestor (parent
         component).
       </p>
+
+      <h3>
+        Lift state up to App.jsx from this child component using a button:
+      </h3>
+      {/* the data from this child component is going to be 'lifted' to the parent component in this case that will be App.jsx */}
+      <button onClick={handleClickLiftState()}>Click Here to Lift State</button>
     </>
   );
 };
