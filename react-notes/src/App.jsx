@@ -12,6 +12,11 @@ function App() {
   // create data to pass down as prop to LearnProps.jsx child component
   let passItDown = "I came from App.jsx.";
 
+  // use this function to get the data from the child component LearnLiftingStateUp into app.jsx
+  const getChildData = () => {
+    console.log();
+  };
+
   return (
     <>
       <h1>React Notes: Annotated Code</h1>
@@ -40,7 +45,7 @@ function App() {
         </li>
         <li>
           {/* learn how to pass data from child to parent (lifting state) */}
-          <LearnLiftingStateUp />
+          <LearnLiftingStateUp getChildData={getChildData} />
         </li>
         <li>State</li>
         <li>useStateHook with Objects</li>
