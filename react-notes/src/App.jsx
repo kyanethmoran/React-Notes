@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./App.css";
 
-// add Hellow World Component via import
+// add Components via import
 import HelloWorld from "./components/HelloWorld";
+import LearnJSX from "./components/LearnJSX";
 
 function App() {
   return (
@@ -10,10 +11,13 @@ function App() {
       <h1>React Notes: Annotated Code</h1>
       <h3>
         {/* the <i> tage makes thins italics, <em> will also by adding emphasis */}
-        <i>This Source Code is Heavily Annotated</i>
+        <i>
+          This Source Code is <strong>HEAVILY</strong> Annotated
+        </i>
       </h3>
-      {/* add the Hello World component to utilize it in the app */}
+      {/* add the components to utilize it in the app */}
       <HelloWorld />
+      <LearnJSX />
     </>
   );
 }
