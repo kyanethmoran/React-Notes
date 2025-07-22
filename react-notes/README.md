@@ -1,12 +1,35 @@
-# React + Vite
+# NOTE FROM DEV:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I this is my notes on React and the fundamentals. This is not really a stand alone project by any means and isnt particularly made to be pretty. This is HEAVILY annotated code.
 
-Currently, two official plugins are available:
+-Happy Coding, SKM
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Purpose:
 
-## Expanding the ESLint configuration
+- One place to throw the foundational knowledge of React and cover the core topics
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Topics Contained:
+
+- Components
+- Props
+- Events
+- Lifting State Up
+- State
+- useState Hook With Objects
+- Counter App
+- useEffect Hook
+- Cleanup Functions in useEffect
+- useMemo Hook
+- Prop Drilling
+- Context API
+- useContext Hook
+- useRef Hook
+- Custom Hooks
+- Conditional Rendering
+- Map Function
+- Inline CSS
+- Internal And External CSS
+- Loading Images
+- Forms
+
+# Hey John, if you're reading this I'm glad you decided to pick up coding and seriously ask questions and consume as many top rated youtube creators as possible. Its not as hard as it seems but, it really is alot of fun when you realize you made something that works. You're my favorite cousin John Boy, you got this!
