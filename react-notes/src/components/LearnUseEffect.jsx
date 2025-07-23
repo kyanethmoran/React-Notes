@@ -5,7 +5,11 @@ const LearnUseEffect = () => {
     <>
       <h2>use Effect Hook</h2>
       <h3>What is it?</h3>
-      <p>definition here</p>
+      <p>
+        useEffect is a React Hook that lets you run side effects in functional
+        components. Think of side effects as anything that affects things
+        outside the component — like:
+      </p>
       <p>It looks alot like this:</p>
       <ul>
         <li>
