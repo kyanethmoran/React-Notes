@@ -7,6 +7,7 @@ import LearnJSX from "./components/LearnJSX";
 import LearnProps from "./components/LearnProps";
 import LearnEvent from "./components/LearnEvent";
 import LearnLiftingStateUp from "./components/LearnLiftingStateUp";
+import LearnUseState from "./components/LearnUseState";
 
 function App() {
   // create data to pass down as prop to LearnProps.jsx child component
@@ -52,7 +53,9 @@ function App() {
             component*
           </p>
         </li>
-        <li>State</li>
+        <li>
+          <LearnUseState />
+        </li>
         <li>useStateHook with Objects</li>
         <li>Coutner App</li>
         <li>useEffect Hook</li>
