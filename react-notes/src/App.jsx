@@ -13,8 +13,9 @@ function App() {
   let passItDown = "I came from App.jsx.";
 
   // use this function to get the data from the child component LearnLiftingStateUp into app.jsx
-  const getChildData = () => {
-    console.log();
+  // when the parent passes getChildData to the child, the child then gives the function the childData for the parent to display
+  const getChildData = (childData) => {
+    console.log(childData);
   };
 
   return (
@@ -46,6 +47,10 @@ function App() {
         <li>
           {/* learn how to pass data from child to parent (lifting state) */}
           <LearnLiftingStateUp getChildData={getChildData} />
+          <p>
+            *Check your console logs to see the lifted data from child to parent
+            component*
+          </p>
         </li>
         <li>State</li>
         <li>useStateHook with Objects</li>

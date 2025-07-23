@@ -1,9 +1,12 @@
 import React from "react";
 
-const LearnLiftingStateUp = () => {
+const LearnLiftingStateUp = (props) => {
   // this is the function that will handle the button click to lift the state to App.jsx
   const handleClickLiftState = () => {
-    let childData = "This came from the Child component by Lifting State";
+    let childData =
+      "This console log came from parent component by liftinf the data from the child component";
+    // get the function in the parent component to pass it the childData string
+    props.getChildData(childData);
   };
 
   return (
@@ -22,7 +25,7 @@ const LearnLiftingStateUp = () => {
         Lift state up to App.jsx from this child component using a button:
       </h3>
       {/* the data from this child component is going to be 'lifted' to the parent component in this case that will be App.jsx */}
-      <button onClick={handleClickLiftState()}>Click Here to Lift State</button>
+      <button onClick={handleClickLiftState}>Click Here to Lift State</button>
     </>
   );
 };
