@@ -9,7 +9,7 @@ const LearnUseContext = () => {
   const text = `"This string was prop drilled from the parent!"`;
 
   //   data for the context api to provide and consume, can be used with hook or contextName.comsumer
-  const contextData = "This string came from using context";
+  const contextData = `"This string came from using context"`;
   return (
     <>
       <h2>useContext Hook:</h2>
@@ -84,6 +84,13 @@ const LearnUseContext = () => {
           </ul>
         </li>
       </ol>
+      <h3>useContext Difference:</h3>
+      <p>
+        when working with the useContext Hook, we dont need to call the consumer
+        because the hook takes care of that. Just import the useContext hook and
+        display the contextData directly. <br />
+        <code>UseContext Data: {contextData}</code>
+      </p>
       <h3>Lets see how they all work:</h3>
       <ul>
         <li>
@@ -93,6 +100,10 @@ const LearnUseContext = () => {
           </contextExample.Provider>
         </li>
       </ul>
+      <p>
+        *Be sure to check the annoted code in LearnUseContext.jsx, ChildA.jsx,
+        ChildB.jsx and ChildC.jsx to get the full picture*
+      </p>
     </>
   );
 };

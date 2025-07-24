@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { contextExample } from "../components/LearnUseContext";
 
 const ChildC = (props) => {
-  // consume the data from the context to acces context value
+  // consume the data from the context to access context value
   const contextData = useContext(contextExample);
   return (
     <>
