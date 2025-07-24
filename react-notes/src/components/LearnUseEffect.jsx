@@ -64,6 +64,19 @@ const LearnUseEffect = () => {
               Stop and reset the Count
             </li>
           </ul>
+          <p>
+            The array at the end of a useEffect are its dependencies, ot the
+            data that it depends on to decide when to run. There are three ways
+            to fill out these dependencies:
+          </p>
+          <ol>
+            <li>[] - Runs only once on mount</li>
+            <li>[variables] - Runs when variable(s) changes</li>
+            <li>
+              no array / empty - This will cause your useEffect to run after
+              every render
+            </li>
+          </ol>
         </li>
       </ul>
     </>
