@@ -13,6 +13,7 @@ import LearnUseMemo from "./components/LearnUseMemo";
 import LearnUseContext from "./components/LearnUseContext";
 import LearnUseRef from "./components/LearnUseRef";
 import LearnCustomHooks from "./components/LearnCustomHooks";
+import LearnConditionalRendering from "./components/LearnConditionalRendering";
 
 function App() {
   // create data to pass down as prop to LearnProps.jsx child component
@@ -87,10 +88,30 @@ function App() {
           <LearnCustomHooks />
           <hr />
         </li>
-        <li>useEffect Hook</li>
+        <li>
+          <LearnConditionalRendering />
+          <hr />
+        </li>
         <li>useEffect Hook</li>
         <li>useEffect Hook</li>
       </ol>
+      <hr />
+      <h3>
+        <h2>The End of React-Notes:</h2>
+        {/* the <i> tage makes thins italics, <em> will also by adding emphasis */}
+        <i>
+          This Source Code is <strong>HEAVILY</strong> Annotated
+        </i>
+        <p>
+          To really understand what is going on you need to look at the source
+          code as well as occassionally the console in your inspector tools.
+          This is just my quick notes on the basics and is not really a full
+          fledged project of any kind. This is not designed to be pretty but to
+          be bare bones. I simply wanted a way to take notes where I wasnt
+          keeping information in word docs constantly highlighted with 'errors'
+          or having to hand write code snippets in a notebook.
+        </p>
+      </h3>
     </>
   );
 }
