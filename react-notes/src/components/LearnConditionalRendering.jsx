@@ -70,6 +70,7 @@ const LearnConditionalRendering = () => {
       <ul>
         <li>
           {/* here we are using the ternary operation, which is basically 'if true do this if not then do this instead' */}
+          {/* if the user is logged in render the first div, otherwise render the second div*/}
           {isLoggedIn ? (
             <div>
               <strong>You are logged in!</strong>
@@ -80,6 +81,7 @@ const LearnConditionalRendering = () => {
             <div>
               <strong>Please Log in!</strong>
               <br />
+
               <button onClick={handleLoginStatus}>Log In</button>
             </div>
           )}
