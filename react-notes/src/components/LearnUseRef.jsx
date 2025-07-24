@@ -1,13 +1,27 @@
 import React, { useState, useRef } from "react";
 
 const LearnUseRef = () => {
-  // create a variable to use in the exmaple
+  // create a variable to use in the exmaple, every keystroke will update this name state
   const [name, setName] = useState("");
+  // create the reference element for your useRef hook to the DOM input element
+  const refElement = useRef("");
+  // this will store the old name input, and updates every keystroke without causing a re-render
+  const previousNameRef = useRef("");
+
+  // function to handle the input of the textbox taking in the event
+  const handleInput = (e) => {
+    // previous name is set to current value of name, so we are always storing what the name used to be before the newest change
+    previousNameRef.current = name;
+    // name is updated to the new input value
+    setName(e.target.value);
+  };
 
   // arrow function to clear the textbox
   const clearTextBox = () => {
     // sets the textbox back to an empty string
     setName("");
+    // we are going to focus on the current value stored in the refElement by useRef
+    refElement.current.focus();
   };
   return (
     <>
@@ -52,16 +66,16 @@ const LearnUseRef = () => {
         </li>
       </ul>
       <h3>Example of useRef:</h3>
-      {/* create an input, the value inside the input will be our name variable
-      whenever there is a change in the inputbox we are going to use the name setter function
-      to update the name to the event (e) value. int his case the event is a change to the textbox */}
-      <input
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      ></input>
+      {/* create an input, it will refernce our useRef to the DOM element and the value inside the input will be our name variable
+      whenever there is a change in the inputbox we are going to use the handleInput function to do something with the name */}
+      <input ref={refElement} type="text" value={name} onChange={handleInput} />
       {/* extra function to clear the text box so we can repeat the process */}
       <button onClick={clearTextBox}>Clear</button>
+      <p>
+        Previous name: {previousNameRef.current}
+        <br /> **Everytime that a new letter is added (or a change happens) the
+        previous data before the new change is being saved and referenced.**
+      </p>
     </>
   );
 };
