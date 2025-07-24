@@ -32,16 +32,16 @@ const LearnConditionalRendering = () => {
       <h3>Common Techniques: </h3>
       <ul>
         <li>
-          if/else statements: Suitable for simple scenarios with a few
-          conditional branches.
+          <code>if/else</code> statements: Suitable for simple scenarios with a
+          few conditional branches.
         </li>
         <li>
-          Ternary operator (? :): Provides a concise way to handle two-way
-          conditional rendering.
+          Ternary operator <code>(? :)</code>: Provides a concise way to handle
+          two-way conditional rendering.
         </li>
         <li>
-          Logical AND (&&): Efficient for conditionally rendering a component
-          only when a condition is true.
+          Logical AND <code>(&&)</code>: Efficient for conditionally rendering a
+          component only when a condition is true.
         </li>
         <li>
           switch statements: Useful for handling multiple conditional branches
@@ -49,9 +49,10 @@ const LearnConditionalRendering = () => {
         </li>
         <li>
           Element variables: Assigning components to variables based on
-          conditions and then rendering the variable.{" "}
+          conditions and then rendering the variable.
         </li>
       </ul>
+      <h3>Example Of Conditional Rendering: </h3>
     </>
   );
 };
