@@ -15,8 +15,21 @@ const LearnUseContext = () => {
         There are two important things you should know before useContext:
       </label>
       <ol>
-        <li>Prop Drilling</li>
-        <li>Context API</li>
+        <li>
+          <strong>Prop Drilling- </strong>the process of passing data (props)
+          from a parent component down through multiple levels of child
+          components until it reaches a deeply nested component that actually
+          needs the data. This means that intermediate components in the
+          hierarchy receive and pass down the data, even if they don't directly
+          use it themselves.
+        </li>
+        <li>
+          <strong>Context API-</strong> enables sharing data across the
+          component tree without manually passing props down through every
+          level. It provides a mechanism to create a "global" state or data that
+          can be accessed by any component within a specific part of the
+          application, regardless of its nesting depth.
+        </li>
       </ol>
     </>
   );
