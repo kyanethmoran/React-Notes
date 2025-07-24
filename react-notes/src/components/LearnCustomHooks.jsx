@@ -2,6 +2,8 @@ import React from "react";
 import useCounter from "../customHooks/useCounter";
 
 const LearnCustomHooks = () => {
+  // return the data from useCounter with a starting value of 0
+  const { count, increment, decrement, resetCount } = useCounter(0);
   return (
     <>
       <h2>Custom Hooks: </h2>
@@ -99,10 +101,10 @@ const LearnCustomHooks = () => {
         This hook will be able to facilitate the incrementing, decrementing, and
         reseting of a counter.
       </p>
-      <p>Count: </p>
-      <button>Increment</button>
-      <button>decrement</button>
-      <button>reset</button>
+      <p>Count: {count}</p>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>decrement</button>
+      <button onClick={resetCount}>reset</button>
     </>
   );
 };
