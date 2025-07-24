@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 const LearnConditionalRendering = () => {
+  // state for is the user logged in conditional rendering
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+
+  // a function to handle when a user presses login or logout buttons
+  const handleLoginStatus = () => {
+    setIsLoggedIn(!isLoggedIn);
+  };
+
   return (
     <>
       <h2>Conditional Rendering in React:</h2>
@@ -53,6 +61,34 @@ const LearnConditionalRendering = () => {
         </li>
       </ul>
       <h3>Example Of Conditional Rendering: </h3>
+      <p>
+        A good example is if we have a user login aspect to our project. If the
+        user IS NOT logged in then they should not see a logout button amoungst
+        other things. If the user IS logged in then they should see a logout and
+        maybe some user info.
+      </p>
+      <ul>
+        <li>
+          {/* here we are using the ternary operation, which is basically 'if true do this if not then do this instead' */}
+          {isLoggedIn ? (
+            <div>
+              <strong>You are logged in!</strong>
+              <br />
+              <button onClick={handleLoginStatus}>Log Out</button>
+            </div>
+          ) : (
+            <div>
+              <strong>Please Log in!</strong>
+              <br />
+              <button onClick={handleLoginStatus}>Log In</button>
+            </div>
+          )}
+        </li>
+      </ul>
+      <p>
+        **Click the above button see how what is rendered changes conditionally
+        based on the value of <code>isLoggedIn</code>**
+      </p>
     </>
   );
 };
