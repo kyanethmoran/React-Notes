@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 
 const LearnUseRef = () => {
+  // create a variable to use in the exmaple
+  const [name, setName] = useState("");
+
+  // arrow function to clear the textbox
+  const clearTextBox = () => {
+    // sets the textbox back to an empty string
+    setName("");
+  };
   return (
     <>
       <h2>UseRef Hook:</h2>
@@ -43,6 +51,17 @@ const LearnUseRef = () => {
           immediately.
         </li>
       </ul>
+      <h3>Example of useRef:</h3>
+      {/* create an input, the value inside the input will be our name variable
+      whenever there is a change in the inputbox we are going to use the name setter function
+      to update the name to the event (e) value. int his case the event is a change to the textbox */}
+      <input
+        type="text"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      ></input>
+      {/* extra function to clear the text box so we can repeat the process */}
+      <button onClick={clearTextBox}>Clear</button>
     </>
   );
 };
