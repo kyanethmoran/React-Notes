@@ -16,12 +16,12 @@ function useCounter(initialValue = 0) {
   };
 
   //   this function will reset the count back to its default value
-  const resestCount = () => {
+  const resetCount = () => {
     setCount(initialValue);
   };
 
   //   make sure that our function can return all the values and functions
-  return { count, increment, decrement, resestCount };
+  return { count, increment, decrement, resetCount };
 }
 
 // make sure that you are exporting the useCounter hook so components are able to import and use it
