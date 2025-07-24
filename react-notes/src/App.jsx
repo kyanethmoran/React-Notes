@@ -34,17 +34,21 @@ function App() {
         <li>
           {/* add the components to utilize it in the app */}
           <HelloWorld />
+          <hr />
         </li>
         <li>
           <LearnJSX />
+          <hr />
         </li>
         <li>
           {/* give Learn prop child of app.jsx some data (a prop) called passItDown  */}
           <LearnProps passItDown={passItDown} />
+          <hr />
         </li>
         <li>
           {/* handle an event like a button onClick */}
           <LearnEvent />
+          <hr />
         </li>
         <li>
           {/* learn how to pass data from child to parent (lifting state) */}
@@ -53,12 +57,15 @@ function App() {
             *Check your console logs to see the lifted data from child to parent
             component*
           </p>
+          <hr />
         </li>
         <li>
           <LearnUseState />
+          <hr />
         </li>
         <li>
           <LearnUseEffect />
+          <hr />
         </li>
         <li>Coutner App</li>
         <li>useEffect Hook</li>
