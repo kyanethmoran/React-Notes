@@ -99,6 +99,10 @@ const LearnCustomHooks = () => {
         This hook will be able to facilitate the incrementing, decrementing, and
         reseting of a counter.
       </p>
+      <p>Count: </p>
+      <button>Increment</button>
+      <button>decrement</button>
+      <button>reset</button>
     </>
   );
 };
