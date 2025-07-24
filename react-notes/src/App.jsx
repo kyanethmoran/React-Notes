@@ -11,6 +11,7 @@ import LearnUseState from "./components/LearnUseState";
 import LearnUseEffect from "./components/LearnUseEffect";
 import LearnUseMemo from "./components/LearnUseMemo";
 import LearnUseContext from "./components/LearnUseContext";
+import LearnUseRef from "./components/LearnUseRef";
 
 function App() {
   // create data to pass down as prop to LearnProps.jsx child component
@@ -77,7 +78,10 @@ function App() {
           <LearnUseContext />
           <hr />
         </li>
-        <li>useEffect Hook</li>
+        <li>
+          <LearnUseRef />
+          <hr />
+        </li>
         <li>useEffect Hook</li>
         <li>useEffect Hook</li>
         <li>useEffect Hook</li>
