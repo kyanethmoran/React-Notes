@@ -15,6 +15,8 @@ const LearnUseEffect = () => {
 
     // we want to clear the timeout so we can rerun the effect and prevent overlapping timers from repeat renders
     return () => clearTimeout(countdown);
+    // this array is a dependency array, so the useEffect depends on this information. useEffect is used when
+    // the variables in the array change
   }, [isCounting, count]);
 
   //  this function will trigger the use effect and start the timer
