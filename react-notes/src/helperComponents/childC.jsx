@@ -1,7 +1,14 @@
 import React from "react";
 
-const childC = () => {
-  return <div>childC</div>;
+const ChildC = (props) => {
+  return (
+    <>
+      <div>
+        ChildC : here is the data prop-drilled from 3 components up <br />
+        {props.text}
+      </div>
+    </>
+  );
 };
 
-export default childC;
+export default ChildC;

@@ -1,6 +1,9 @@
 import React from "react";
+import ChildA from "../helperComponents/childA";
 
 const LearnUseContext = () => {
+  // this is the data i will be prop drilling from here to ChildC
+  const text = "PropDrilled from the parent";
   return (
     <>
       <h2>useContext Hook:</h2>
@@ -31,6 +34,11 @@ const LearnUseContext = () => {
           application, regardless of its nesting depth.
         </li>
       </ol>
+      <p>
+        If we have data in this component that we want to get to childC it needs
+        to pass through childA then childB first
+      </p>
+      <ChildA text={text} />
     </>
   );
 };

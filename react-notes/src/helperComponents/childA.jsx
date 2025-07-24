@@ -1,7 +1,13 @@
 import React from "react";
+import ChildB from "./childB";
 
-const childA = () => {
-  return <div>childA</div>;
+const ChildA = (props) => {
+  return (
+    <>
+      <div>ChildA</div>
+      <ChildB text={props.text} />
+    </>
+  );
 };
 
-export default childA;
+export default ChildA;
