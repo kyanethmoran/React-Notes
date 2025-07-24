@@ -105,6 +105,11 @@ const LearnCustomHooks = () => {
       <button onClick={increment}>Increment</button>
       <button onClick={decrement}>decrement</button>
       <button onClick={resetCount}>reset</button>
+      <p>
+        **The count and all three functions increment, decrement, and reset are
+        coming from the useCounter custom hook. We are doing non of the logic in
+        this main component**
+      </p>
     </>
   );
 };
