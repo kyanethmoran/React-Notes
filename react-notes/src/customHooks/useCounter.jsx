@@ -19,6 +19,9 @@ function useCounter(initialValue = 0) {
   const resestCount = () => {
     setCount(initialValue);
   };
+
+  //   make sure that our function can return all the values and functions
+  return { count, increment, decrement, resestCount };
 }
 
 // make sure that you are exporting the useCounter hook so components are able to import and use it
