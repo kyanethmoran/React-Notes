@@ -12,6 +12,7 @@ import LearnUseEffect from "./components/LearnUseEffect";
 import LearnUseMemo from "./components/LearnUseMemo";
 import LearnUseContext from "./components/LearnUseContext";
 import LearnUseRef from "./components/LearnUseRef";
+import LearnCustomHooks from "./components/LearnCustomHooks";
 
 function App() {
   // create data to pass down as prop to LearnProps.jsx child component
@@ -82,7 +83,10 @@ function App() {
           <LearnUseRef />
           <hr />
         </li>
-        <li>useEffect Hook</li>
+        <li>
+          <LearnCustomHooks />
+          <hr />
+        </li>
         <li>useEffect Hook</li>
         <li>useEffect Hook</li>
         <li>useEffect Hook</li>
