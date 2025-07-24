@@ -93,6 +93,11 @@ const LearnCustomHooks = () => {
           </ul>
         </li>
       </ol>
+      <h3>Utilizing a useCounter Custom Hook:</h3>
+      <p>
+        This hook will be able to facilitate the incrementing, decrementing, and
+        reseting of a counter.
+      </p>
     </>
   );
 };
