@@ -16,6 +16,7 @@ import LearnCustomHooks from "./components/LearnCustomHooks";
 import LearnConditionalRendering from "./components/LearnConditionalRendering";
 import LearnMap from "./components/LearnMap";
 import LearnLoadingImages from "./components/LearnLoadingImages";
+import LearnForms from "./components/LearnForms";
 
 function App() {
   // create data to pass down as prop to LearnProps.jsx child component
@@ -102,7 +103,10 @@ function App() {
           <LearnLoadingImages />
           <hr />
         </li>
-        <li>useEffect Hook</li>
+        <li>
+          <LearnForms />
+          <hr />
+        </li>
         <li>useEffect Hook</li>
         <li>useEffect Hook</li>
         <li>useEffect Hook</li>
