@@ -52,7 +52,7 @@ const LearnMap = () => {
         not best practice but the way I have been doing it so far as to not skip
         through to much at once and make the code easier to read if you are
         using this at notes.If any of my notes segments change I would need to
-        go back find the list element and make a change inside the paragraph
+        go back find the element and make a change inside it
       </p>
       <p>
         The way that you should go about making a page more dynamic and
