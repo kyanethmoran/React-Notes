@@ -68,48 +68,54 @@ function App() {
           <hr />
         </li>
         <li>
+          {/* learn how to use useState hook */}
           <LearnUseState />
           <hr />
         </li>
         <li>
+          {/* learn how to use useEffect hook */}
           <LearnUseEffect />
           <hr />
         </li>
         <li>
+          {/* learn how to use useMemo hook */}
           <LearnUseMemo />
           <hr />
         </li>
         <li>
+          {/* learn how to use useContext hook */}
           <LearnUseContext />
           <hr />
         </li>
         <li>
+          {/* learn how to use useRef hook */}
           <LearnUseRef />
           <hr />
         </li>
         <li>
+          {/* learn how to make and use custom hooks for you own logic */}
           <LearnCustomHooks />
           <hr />
         </li>
         <li>
+          {/* learn how to dynamically populate things to the UI */}
           <LearnConditionalRendering />
           <hr />
         </li>
         <li>
+          {/* Learn about the map function to iterate through data for the UI */}
           <LearnMap />
           <hr />
         </li>
         <li>
+          {/* Insert images into you web app */}
           <LearnLoadingImages />
           <hr />
         </li>
         <li>
+          {/* learn about taking in information via user input and forms and handling them when submited */}
           <LearnForms />
-          <hr />
         </li>
-        <li>useEffect Hook</li>
-        <li>useEffect Hook</li>
-        <li>useEffect Hook</li>
       </ol>
       <hr />
       <h3>
