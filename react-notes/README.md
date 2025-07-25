@@ -27,8 +27,6 @@ I this is my notes on React and the fundamentals. This is not really a stand alo
 - Custom Hooks
 - Conditional Rendering
 - Map Function
-- Inline CSS
-- Internal And External CSS
 - Loading Images
 - Forms
 
